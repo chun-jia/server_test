@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "update-deps": "npm update",
+    "prestart": "npm install",
+    "start": "nodemon app.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -11,12 +13,9 @@
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
-    "morgan": "~1.9.0"
-  },
-  "scripts": {
-    "update-deps": "npm update",
-    "prestart": "npm install",
-    "start": "nodemon app.js",
-    "pretest": "npm install"
+    "morgan": "~1.9.0",
+    "nodemon":"~1.18.9",
+    "memory-streams": "~0.1.3",
+    "hummus":"~1.0.95"
   }
 }
